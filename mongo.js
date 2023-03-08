@@ -25,11 +25,11 @@ const personSchema = new mongoose.Schema({
 const Persons = mongoose.model('Person', personSchema)
 
 const person = new Persons({
-  name: "Yasir",
-  number: "012343255421"
+  name: 'Yasir',
+  number: '012343255421'
 })
 
-person.save().then(result=> {
+person.save().then( result => {
   console.log('person saved!')
   mongoose.connection.close()
 })
@@ -44,7 +44,7 @@ person.save().then(result=> {
 // Persons.find({}).then(result => {
 //   console.log("phonebook:")
 //   result.forEach(person => {
-//     console.log( person.name + ' ' + person.number) 
+//     console.log( person.name + ' ' + person.number)
 //   })
 //   mongoose.connection.close()
 // })
