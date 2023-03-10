@@ -1,4 +1,4 @@
-module.exports ={
+module.exports = {
   'env': {
     'browser': true,
     'commonjs': true,
@@ -16,7 +16,10 @@ module.exports ={
       'error',
       2
     ],
-    'linebreak-style': 0,
+    'linebreak-style': [
+      'error',
+      'windows'
+    ],
     'quotes': [
       'error',
       'single'
@@ -33,6 +36,5 @@ module.exports ={
     'arrow-spacing': [
       'error', { 'before': true, 'after': true }
     ],
-    'no-console': 0
-  },
+  }
 }
